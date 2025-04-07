@@ -2,7 +2,7 @@
 
 This repository includes an R project (R codes, functions, and data) for generating key figures in the paper:
 
-**Omitting labor responses to heat stress underestimates future climate impact on agriculture**
+**Omitting labor responses underestimates the effects of future heat stress on agriculture**
 
 Di Sheng*, Xin Zhao*, James A. Edmonds, Pralit Patel, Stephanie T. Morris, Brian C. O’Neill, Claudia Tebaldi, Marshall A. Wise
 

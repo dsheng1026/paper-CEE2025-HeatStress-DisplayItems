@@ -6,14 +6,9 @@ MapAgCOMM %>% pull(regsector)
 
 
 # SCENARIO <- c("L_HS1_GFDL", "L_HS1_HadGEM", "L_HS2_GFDL", "L_HS2_HadGEM")
-SCENARIO <- Scenario; SCENARIO
+SCENARIO <- Scenario[!Scenario %in% c("KNX_ref")]; SCENARIO
 
 
-PluckBind <- function(.query ){
-  ListV2024 %>% purrr::pluck(.query) %>%
-    mutate(branch = scenario, scenario = ss) %>%
-    filter(scenario %in% SCENARIO) 
-}
 
 
 ## Start with demand ----
@@ -70,7 +65,7 @@ AgElement_SUA %>%
   filter(element == "Production") %>%
   spread(element, value) %>%
   left_join_error_no_match(
-    "Agprices" %>% PluckBind() %>%
+    "Agprices" %>% PluckBind() %>% #  1975$/kg
       bind_rows("Meatprices" %>% PluckBind()) %>%
       mutate(sector = tolower(sector)) %>%
       rename(Price = value) %>% select(-Units),

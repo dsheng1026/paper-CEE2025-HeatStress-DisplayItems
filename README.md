@@ -8,7 +8,7 @@ Di Sheng*, Xin Zhao*, James A. Edmonds, Pralit Patel, Stephanie T. Morris, Brian
 
 Joint Global Change Research Institute, Pacific Northwest National Laboratory
 
-*Corresponding Authors. Email:  di.sheng@pnnl.gov & xin.zhao@pnnl.gov
+*Corresponding Authors. Email:  sheng@iiasa.ac.at & xin.zhao@pnnl.gov
 
 
 
